@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Black+Han+Sans&family=Inter:wght@100;300;400&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 243, 226);
+    margin: 10px;   
+    padding: 0px;
+    font-size: 20px;
+}
+
+header {
+    background-color: rgb(255, 243, 226);
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+
+}
+
+header>img {
+    float: center;
+
+}
+
+header,
+body,
+div {
+    display: inline-block;
+}
+
+
+h1,
+h2 {
+    font-family: 'Black Han Sans', sans-serif;
+
+
+}
+
+h4 {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  background-color: rgb(255, 229, 202)
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(231, 70, 70);
+    text-align: center;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+
+}
+
+li a:hover {
+    background-color: rgb(250, 152, 132);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: rgb(255, 243, 226);
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: rgb(231, 70, 70);
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: rgb(231, 70, 70); 
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: rgb(231, 70, 70);
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: rgb(231, 70, 70);
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: rgb(250, 152, 132);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0.3;
+    }
+  }
+
+footer,
+aside {
+    text-align: center;
+}
